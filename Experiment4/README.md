@@ -1,4 +1,4 @@
-# LEARNING OUTCOMES - EXPERIMENT 4 (23BIS70027) : State Management Using Redux
+# LEARNING OUTCOMES - EXPERIMENT 4 (23BIS70016) : State Management Using Redux
 
 ### 1. Understand about Local State with (useState) where learned about how to manage state inside a single component using useState(), and how React re-renders UI when state changes.
 

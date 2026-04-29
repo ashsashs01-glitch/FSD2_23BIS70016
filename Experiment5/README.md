@@ -1,4 +1,4 @@
-# LEARNING OUTCOMES: EXPERIMENT 5 (23BIS70027) (Optimize frontend performance using lazy loading.)
+# LEARNING OUTCOMES: EXPERIMENT 5 (23BIS70016) (Optimize frontend performance using lazy loading.)
 
 ## Name - Prajjwal Kandpal, UID - 23BIS70052
 

@@ -1,0 +1,70 @@
+#root {
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem;
+  font-family: serif;
+}
+
+/* COMMON CARD */
+.card {
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 12px;
+  width: 90%;
+  text-align: center;
+}
+
+/* COLORS */
+.local {
+  background: #dbeeff;
+}
+
+.context {
+  background: #d7ffe5;
+}
+
+.redux {
+  background: #ffe4d4;
+}
+
+/* BUTTON ROW */
+.btn-row {
+  margin-top: 20px;
+}
+
+/* BASE BUTTON */
+button {
+  padding: 14px 36px;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* LOCAL STATE BUTTONS */
+.local .inc {
+  background: transparent;
+  border: 2px solid #1976d2;
+  color: #1976d2;
+}
+
+.local .dec {
+  background: transparent;
+  border: 2px solid #1976d2;
+  color: #1976d2;
+}
+
+/* CONTEXT BUTTONS */
+.context button {
+  background: transparent;
+  border: 2px solid #3aa76d;
+  color: #3aa76d;
+}
+
+/* REDUX BUTTONS */
+.redux button {
+  background: transparent;
+  border: 2px solid #f7b894;
+  color: #d49d7c;
+}

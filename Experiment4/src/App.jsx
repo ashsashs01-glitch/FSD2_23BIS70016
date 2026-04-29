@@ -1,0 +1,61 @@
+import "./App.css";
+import { useState, useContext } from "react";
+import LocalCounter from "./components/contextapi/CounterState";
+import ParentCounter from "./components/contextapi/CounterParent";
+import CounterReduxParent from "./components/Redux/CounterGlobalReduxParent";
+import { CounterContext } from "./components/contextapi/CounterContextApi";
+
+export default function App() {
+  const [localCount1, setLocalCount1] = useState(0);
+  const [localCount2, setLocalCount2] = useState(0);
+  const { count: contextCount } = useContext(CounterContext);
+
+  return (
+    <div>
+
+      <h1><center>Name: Abhishek Sewda</center></h1>
+      <h1><center>UID: 23BIS70027</center></h1>
+      <h2><center>Experiment 4: State Management using Redux</center></h2>
+     {/* LOCAL STATE */}
+<div className="card local">
+  <h2>1 : Local State Count: {localCount1}</h2>
+  <div className="btn-row">
+    <LocalCounter count={localCount1} setCount={setLocalCount1} />
+  </div>
+</div>
+
+<div className="card local">
+  <h2>2 : Local State Count: {localCount2}</h2>
+  <div className="btn-row">
+    <LocalCounter count={localCount2} setCount={setLocalCount2} />
+  </div>
+</div>
+
+
+      {/* CONTEXT API */}
+      <div className="card context">
+        <h2>1 : Global State (ContextAPI) Count: {contextCount}</h2>
+        <div className="btn-row">
+          <ParentCounter />
+        </div>
+      </div>
+
+      <div className="card context">
+        <h2>2 : Global State (ContextAPI) Count: {contextCount}</h2>
+        <div className="btn-row">
+          <ParentCounter />
+        </div>
+      </div>
+
+      {/* REDUX */}
+      <div className="card redux">
+        <CounterReduxParent cno="1" />
+      </div>
+
+      <div className="card redux">
+        <CounterReduxParent cno="2" />
+      </div>
+
+    </div>
+  );
+}
